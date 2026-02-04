@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/snake.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/snake.js" defer></script>
+    <title>Erik Medina | Front-end developer</title><title>Document</title>
+</head>
+
+<body>
+    <div id="__nuxt">
+
+
+        <div id="mobile-menu" class="w-full z-10 lg:hidden">
+            <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
+                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
+                <svg class="w-5 h-5 mx-5 my-auto" id="menu-button-open">
+                    <use href="assets/icons/icons.svg#burguer"></use>
+                </svg>
+                <svg class="w-5 h-5 mx-5 my-auto hidden" id="menu-button-close">
+                    <use href="assets/icons/icons.svg#close-menu"></use>
+                </svg>
+            </div>
+            <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
+                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _hello </a>
+                <a href="/about.html" class="" id="nav-link-mobile"> _about-me </a>
+                <a href="/proyects.html" class="" id="nav-link-mobile"> _projects </a>
+                <a href="/contact.html" class="" id="nav-link-mobile"> _contact-me </a>
+            </div>
+        </div>
+
+        <header id="navbar" class="w-full hidden lg:flex flex-col">
+            <nav class="w-full flex justify-between border-bot">
+                <div class="flex">
+                    <a href="/index.html" class="" id="nav-logo">erik-medina</a>
+                    <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active active" id="nav-link"> _hello</a>
+                    <a href="/about.html" class="" id="nav-link"> _about-me </a>
+                    <a href="/proyects.html" class="" id="nav-link">_projects </a>
+                </div>
+                <a href="/contact.html" class="" id="nav-link-contact"> _contact-me </a>
+            </nav>
+        </header>
+
+        <main id="hello"  class="">
+            <div class="css-blurry-gradient-blue"></div>
+            <div class="css-blurry-gradient-green"></div>
+            <section class="hero flex column m-0">
+                <div class="head">
+                    <span> Hi all, I am </span>
+                    <h1>Erik Medina</h1>
+                    <span class="diple flex"> &gt;&nbsp;
+                        <h2 class="line-1 anim-typewriter max-w-fit">Front-end developer</h2>
+                    </span>
+                </div>
+                <div id="info">
+                    <span class="action"> // available to work</span>
+                    <span class=""> // find my profile on Github: </span>
+                    <p class="code">
+                        <span class="identifier"> const </span>
+                        <span class="variable-name"> githubLink </span>
+                        <span class="operator"> = </span>
+                        <a class="string" href="https://github.com/erme07"> "https://github.com/erme07" </a>
+                    </p>
+                </div>
+            </section>
+            <section data-aos="fade-up" class="game aos-init aos-animate">
+
+                <div id="console" data-v-fbcc12c6="">
+                    <svg id="corner" class="absolute top-2 left-2 opacity-70">
+                        <use href="assets/icons/icons.svg#bolt-up-left"></use>
+                    </svg>
+                    <svg id="corner" class="absolute top-2 right-2 opacity-70">
+                        <use href="assets/icons/icons.svg#bolt-up-right"></use>
+                    </svg>
+                    <svg id="corner" class="absolute bottom-2 left-2 opacity-70">
+                        <use href="assets/icons/icons.svg#bolt-bottom-left"></use>
+                    </svg>
+                    <svg id="corner" class="absolute bottom-2 right-2 opacity-70">
+                        <use href="assets/icons/icons.svg#bolt-bottom-right"></use>
+                    </svg>
+                    <div id="game-screen">
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); border-radius: 50%; box-shadow: rgb(67, 217, 173) 0px 0px 10px;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 1; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.944444;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.888889;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.833333;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.777778;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.722222;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.666667;">
+                        </div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.611111;">
+                        </div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.555556;">
+                        </div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.5;">
+                        </div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.444444;">
+                        </div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.388889;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.333333;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.277778;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.222222;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.166667;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.111111;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black green"
+                            style="width: 8px; height: 8px; display: flex; flex-shrink: 0; background-color: rgb(67, 217, 173); opacity: 0.0555556;">
+                        </div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                        <div class="cell black" style="width: 8px; height: 8px; display: flex; flex-shrink: 0;"></div>
+                    </div>
+                    <button id="start-button" class="font-fira_retina">start-game</button>
+                    <div id="game-over" class="hidden">
+                        <span class="font-fira_retina text-greenfy bg-bluefy-dark h-12 flex items-center justify-center">GAME
+                            OVER!
+                        </span>
+                        <button class="font-fira_retina text-menu-text text-sm flex items-center justify-center w-full py-6 hover:text-white" data-button="restart">start-again</button>
+                    </div>
+                    <div id="congrats" class="hidden">
+                        <span class="font-fira_retina text-greenfy bg-bluefy-dark h-12 flex items-center justify-center">
+                            WELL DONE!
+                        </span>
+                        <button class="font-fira_retina text-menu-text text-sm flex items-center justify-center w-full py-6 hover:text-white" data-button="restart">play-again</button>
+                    </div>
+                    <div id="console-menu" class="h-full flex flex-col items-end justify-between">
+                        <div>
+                            <div id="instructions" class="font-fira_retina text-sm text-white leading-[1.25rem]">
+                                <p>// use your keyboard</p>
+                                <p>// arrows to play</p>
+                                <div id="buttons" class="w-full flex flex-col items-center gap-1 pt-5">
+                                    <button id="console-button" class="button-up" data-direction="up">
+                                        <svg class="-rotate-90 w-[9px] h-[9px] pointer-events-none">
+                                            <use href="assets/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="grid grid-cols-3 gap-1">
+                                        <button id="console-button" class="button-left" data-direction="left">
+                                            <svg class="rotate-180 w-[9px] h-[9px] pointer-events-none">
+                                                <use href="assets/icons/icons.svg#arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <button id="console-button" class="button-down" data-direction="down">
+                                            <svg class="rotate-90 w-[9px] h-[9px] pointer-events-none">
+                                                <use href="assets/icons/icons.svg#arrow"></use>
+                                            </svg>
+                                        </button>
+                                        <button id="console-button" class="button-right" data-direction="right">
+                                            <svg class="w-[9px] h-[9px] pointer-events-none">
+                                                <use href="assets/icons/icons.svg#arrow"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="score-board" class="w-full flex flex-col pl-5">
+                                <p class="font-fira_retina text-white pt-5">// food left</p>
+                                <div id="score" class="grid grid-cols-5 gap-5 justify-items-center pt-5 w-fit">
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                    <div class="food"></div>
+                                </div>
+                            </div>
+                        </div><a href="about.html" class="font-fira_retina flex hover:bg-white/20" id="skip-btn"> skip </a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="flex md:justify-between border-top text-menu-text font-fira_retina">
+            <div class="w-full flex justify-between md:justify-start">
+                <span id="social-title" class="h-full flex justify-center items-center border-right px-5"> find me in:
+                </span>
+                <div id="social-icons" class="flex">
+                    <a href="https://codepen.io/erme07" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#codepen"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erik-medina07/" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="flex md:hidden justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="hidden md:flex items-center px-5 border-left">
+                @erme07
+                <svg class="">
+                    <use href="assets/icons/social.svg#github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

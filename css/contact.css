@@ -1,0 +1,168 @@
+
+.arrow {
+    height: 9px;
+    margin-right: 10px;
+    transition: .1s;
+    width: 9px;
+    color: #f8f8f8;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    padding: 4px 25px;
+}
+.link svg {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+}
+.link svg.mail{
+    height: 20px;
+    width: 190px;
+    margin-right: 0;
+}
+.link svg.phone{
+    height: 20px;
+    width: 120px;
+    margin-right: 0;
+}
+
+
+
+.title h3 {
+    color: #fff;
+    font-family: Fira Code Regular;
+    font-size: 16px;
+}
+
+.tab-height {
+    max-height: 35px;
+    min-height: 35px;
+}
+
+@media (max-width: 1024px) {
+    .submenu .title {
+        display: flex;
+        height: 35px;
+        margin-bottom: 3px;
+    }
+}
+@media (min-width: 1024px) {
+    .title h3 {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    .title {
+        align-items: center;
+        border-bottom: 1px solid #1e2d3d;
+        display: flex;
+        height: 35px;
+        padding: 0 25px;
+    }
+}
+
+
+#contact-form {
+    max-width: 370px;
+    width: 100%;
+}
+input {
+    background-color: #011221;
+    border: 2px solid #1e2d3d;
+    border-radius: 7px;
+}
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+form {
+    --tw-text-opacity: 1;
+    color: rgb(133 165 196 / var(--tw-text-opacity));
+    font-family: Fira Code Retina;
+}
+
+#message-input, #submit-button {
+    border-radius: 7px;
+}
+#message-input {
+    background-color: #011221;
+    border: 2px solid #1e2d3d;
+    height: 110px;
+    padding: 10px;
+    resize: none;
+}
+#submit-button {
+    --tw-text-opacity: 1;
+    background-color: #1e2d3d;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    cursor: pointer;
+    font-family: Fira Code Retina;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 20px;
+}
+#submit-button:hover {
+    background-color: #263b50;
+}
+
+.form-content {
+    font-size: 15px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 50px 30px 10px 15px;
+    width: 100%;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    scrollbar-color: #607b96 #00000000;
+}
+
+#scroll-bar {
+    width: 20px;
+    display: none;
+}
+#scroll {
+    background-color: #607b96;
+    height: 7px;
+    width: 14px;
+}
+
+.code-container {
+    align-items: flex-start;
+    display: flex;
+}
+.line-numbers {
+    text-align: right;
+}
+.text-container {
+    word-wrap: break-word;
+    padding-left: 10px;
+    width: 100%;
+}
+.tag {
+    color: #c98bdf;
+}
+
+.tag-name {
+    color: #819bff;
+}
+
+.text-codeline-link {
+    --tw-text-opacity: 1;
+    color: rgb(233 146 135 / var(--tw-text-opacity));
+}
+@media (max-width: 1920px) {
+    #contact-form {
+        max-height: 400px;
+        max-width: 320px;
+    }
+    input, textarea {
+        font-size: 13px;
+    }
+}
+
+.link .text-menu-text:hover{
+    color: white;
+}

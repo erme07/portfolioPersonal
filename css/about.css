@@ -1,0 +1,108 @@
+#sections {
+    width: 5rem; /* 80px */
+    height: 100%;
+    display: none;
+    border-right: 1px solid #1E2D3D;
+}
+
+
+.line-numbers {
+    text-align: right;
+}
+
+.text-container {
+    width: 100%;
+    padding-left: 10px;
+    word-wrap: break-word;
+}
+
+/* LG */
+@media (min-width: 1024px) {
+    #sections {
+        display: block;
+    }
+}
+
+#section-icon.active {
+    opacity: 1;
+}
+
+#section-icon:hover {
+    opacity: 1;
+}
+
+.tab-height {
+    min-height: 35px;
+    max-height: 35px;
+}
+
+#tab-mobile {
+    padding: 25px 20px 0px 25px;
+    align-items: flex-end;
+}
+
+#scroll-bar{
+    width: 20px;
+}
+
+#scroll {
+    width: 14px;
+    height: 7px;
+    background-color: #607B96;
+}
+
+/* #diple {
+    @apply mx-3 w-2 max-w-fit;
+} */
+
+#diple {
+    width: 8px;
+    height: 12px;
+}
+
+.open {
+    transform: rotate(90deg);
+}
+
+.active {
+    color:white;
+}
+
+#right, #left {
+    height: 100%;
+    overflow: hidden;
+}
+
+#gists-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    #gists-content {
+        height: 100%;
+        padding: 0px 25px;
+        overflow: hidden;
+    }
+
+    #about {
+        min-height: stretch;
+    }
+}
+
+.section-arrow {
+    transition: 0.1s;
+    width:7px;
+    height: 9px;
+    color: white;
+    margin-right: 10px;
+}
+
+#section-content #contacts {
+    padding: 0px 25px;
+}
+#experience-box, #technologies-box {
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    scrollbar-color: #607b96 #00000000;
+}

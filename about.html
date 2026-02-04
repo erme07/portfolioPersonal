@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/about.js" defer></script>
+    <title>Erik Medina | Front-end developer</title>
+</head>
+
+<body>
+    <div id="__nuxt">
+
+
+        <div id="mobile-menu" class="w-full z-10 lg:hidden">
+            <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
+                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
+                <svg class="w-5 h-5 mx-5 my-auto" id="menu-button-open">
+                    <use href="assets/icons/icons.svg#burguer"></use>
+                </svg>
+                <svg class="w-5 h-5 mx-5 my-auto hidden" id="menu-button-close">
+                    <use href="assets/icons/icons.svg#close-menu"></use>
+                </svg>
+            </div>
+            <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
+                <a href="/index.html" class="" id="nav-link-mobile"> _hello </a>
+                <a aria-current="page" href="/about.html" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _about-me </a>
+                <a href="/proyects.html" class="" id="nav-link-mobile"> _projects </a>
+                <a href="/contact.html" class="" id="nav-link-mobile"> _contact-me </a>
+            </div>
+        </div>
+
+        <header id="navbar" class="w-full hidden lg:flex flex-col">
+            <nav class="w-full flex justify-between border-bot">
+                <div class="flex">
+                    <a href="/index.html" class="" id="nav-logo">erik-medina</a>
+                    <a href="/index.html" class="" id="nav-link"> _hello</a>
+                    <a aria-current="page" href="/about.html" class="router-link-active router-link-exact-active active" id="nav-link"> _about-me </a>
+                    <a href="/proyects.html" class="" id="nav-link">_projects </a>
+                </div>
+                <a href="/contact.html" class="" id="nav-link-contact"> _contact-me </a>
+            </nav>
+        </header>
+
+
+        <main id="about-me" class="page aos-init aos-animate" data-aos="fade-in">
+            <div id="mobile-page-title">
+                <h2>_about-me</h2>
+            </div>
+
+            <div id="page-menu" class="w-full flex">
+
+                <div id="section-content" class=" w-full h-full border-right">
+                    <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
+                        <div data-type="tab" data-tab="presentation" class="flex items-center col-span-2 hover:text-white cursor-pointer">
+                            <svg class="mx-3 w-2 max-w-fit transition-all open" id="diple">
+                                <use href="assets/icons/icons.svg#diple"></use>
+                            </svg>
+                            <svg class="mr-3 w-[20px] h-[20px] text-[#e9e287]">
+                                <use href="assets/icons/icons.svg#folder"></use>
+                            </svg>
+                            <p id="presentation-label" data-type="tab-content" class="active" data-content="presentation">presentation</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
+                        <div data-type="tab" data-tab="experience" class="flex items-center col-span-2 hover:text-white cursor-pointer">
+                            <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
+                                <use href="assets/icons/icons.svg#diple"></use>
+                            </svg>
+                            <svg class="mr-3 w-[20px] h-[20px] text-[#E99287]">
+                                <use href="assets/icons/icons.svg#folder"></use>
+                            </svg>
+                            <p id="experience-label" class="" data-content="experience">experience</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
+                        <div data-type="tab" data-tab="technologies" class="flex col-span-2 hover:text-white cursor-pointer items-center">
+                            <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
+                                <use href="assets/icons/icons.svg#diple"></use>
+                            </svg>
+                            <svg class="mr-3 w-[20px] h-[20px] text-[#43D9AD]">
+                                <use href="assets/icons/icons.svg#folder"></use>
+                            </svg>
+                            <p id="technologies-label" class="" data-content="experience">technologies</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
+                        <div data-type="tab" data-tab="education" class="flex col-span-2 hover:text-white cursor-pointer items-center">
+                            <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
+                                <use href="assets/icons/icons.svg#diple"></use>
+                            </svg>
+                            <svg class="mr-3 w-[20px] h-[20px] text-[#3A49A4]">
+                                <use href="assets/icons/icons.svg#folder"></use>
+                            </svg>
+                            <p id="education-label" class="" data-content="education">education</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col lg:flex-row h-full w-full">
+                <div id="left" class="w-full flex flex-col border-right">
+                    <div class="tab-height w-full hidden lg:flex border-bot items-center">
+                        <div class="flex items-center border-right h-full">
+                            <p class="font-fira_regular text-menu-text text-sm px-3" id="tab-title">presentation</p>
+                            <svg class="text-menu-text m-3 opacity-70 size-[18px]">
+                                <use href="assets/icons/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="tab-mobile" class="flex lg:hidden font-fira_retina mb-5">
+                        <span class="text-white">// </span>
+                        <h3 class="text-white px-2">professional-info</h3>
+                        <span class="text-menu-text"> / </span>
+                        <h3 class="text-menu-text pl-2">experience</h3>
+                    </div>
+
+                    <div id="commented-text"  data-type="box" data-box="presentation" class="flex w-full lg:border-right overflow-hidden">
+                            <div class="code-container flex flex-col lg:flex-row items-center font-fira_retina text-menu-text rounded-md gap-8 lg:gap-12 border border-[#1e2d3d] bg-[#011221] m-2 p-6 py-12 lg:m-12 lg:p-8">
+                                <img src="./assets/images/perfil.jpg" alt="" class="w-[200px] h-auto rounded-md opacity-90">
+                                <div class="flex flex-col items-center justify-center font-fira_regular text-[15px]">
+                                    <p>
+                                        As a frontend developer, I focus on writing clean code and building clear, user-friendly experiences that are technically solid.
+                                    </p>
+                                    <p>
+                                        I’ve spent many years learning and practicing on my own, working on personal projects as well as some client work, exploring different technologies across the web ecosystem and always aiming to improve the quality and detail of every product.
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="experience-box" data-type="box" data-box="experience" class="hidden overflow-auto overflow-x-hidden flex flex-col gap-8 p-3 lg:p-[50px] ">
+                        <div class="border border-[#1e2d3d] rounded-md p-4 lg:p-5 text-white font-fira_regular text-menu-text flex flex-col gap-2 w-full max-w-[750px] bg-[#011221]">
+                            <h3 class="text-white uppercase">Web Accessibility Tool Development</h3>
+                            <div class="flex justify-between text-white opacity-80 text-[12px]">
+                                <p class="">Universidad Nacional del Oeste</p>
+                                <p class="flex flex-row items-center">
+                                    <span>
+                                        <svg class="mr-2 size-[13px] inline">
+                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                        </svg>
+                                    </span>
+                                    2025 - 2026
+                                </p>
+                            </div>
+                            <p class="text-[14px]">
+                                Development of a web accessibility widget as an official project for a university, focused on improving usability and inclusive access to institutional websites. Implementation of basic accessibility features, interface adjustments, cross-browser testing, and ongoing maintenance to ensure proper functionality
+                            </p>
+                        </div>
+                        <div class="border border-[#1e2d3d] rounded-md p-4 lg:p-5 text-white font-fira_regular text-menu-text flex flex-col gap-2 w-full max-w-[750px] self-end bg-[#011221]">
+                            <h3 class="text-white uppercase">Web Development and Administration</h3>
+                            <div class="flex justify-between text-white opacity-80 text-[12px]">
+                                <p class="">Freelance</p>
+                                <p class="flex flex-row items-center">
+                                    <span>
+                                        <svg class="mr-2 size-[13px] inline">
+                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                        </svg>
+                                    </span>
+                                    2022 - 2026
+                                </p>
+                            </div>
+                            <p class="text-[14px]">
+                                Basic creation and maintenance of websites, content uploading and updates, simple layout and structure adjustments, monitoring proper website functionality, and providing support for general web administration tasks.
+                            </p>
+                        </div>
+                        <div class="border border-[#1e2d3d] rounded-md p-4 lg:p-5 text-white font-fira_regular text-menu-text flex flex-col gap-2 w-full max-w-[750px] bg-[#011221]">
+                            <h3 class="text-white uppercase">Pharmaceutical Plant Operator</h3>
+                            <div class="flex justify-between text-white opacity-80 text-[12px]">
+                                <p class="">Farmacity</p>
+                                <p class="flex flex-row items-center">
+                                    <span>
+                                        <svg class="mr-2 size-[13px] inline">
+                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                        </svg>
+                                    </span>
+                                    2025
+                                </p>
+                            </div>
+                            <p class="text-[14px]">
+                                Performed operational tasks within a pharmaceutical plant, including product handling and packaging, visual quality checks, compliance with hygiene and safety procedures, and support for production and logistics processes, following quality standards and good manufacturing practices.
+                            </p>
+                        </div>
+
+                        <div class="border border-[#1e2d3d] rounded-md p-4 lg:p-5 text-white font-fira_regular text-menu-text flex flex-col gap-2 w-full max-w-[750px] self-end bg-[#011221]">
+                            <h3 class="text-white uppercase">Painting - Wall Covering Installation</h3>
+                            <div class="flex justify-between text-white opacity-80 text-[12px]">
+                                <p class="">Freelance</p>
+                                <p class="flex flex-row items-center">
+                                    <span>
+                                        <svg class="mr-2 size-[13px] inline">
+                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                        </svg>
+                                    </span>
+                                    2012 - 2026
+                                </p>
+                            </div>
+                            <p class="text-[14px]">
+                                Performed interior and exterior painting work, including surface preparation (sanding, cleaning, and sealing), application of various painting techniques, and installation of wall coverings, ensuring high-quality finishes and compliance with safety standards
+                            </p>
+                        </div>
+                        <div class="border border-[#1e2d3d] rounded-md p-4 lg:p-5 text-white font-fira_regular text-menu-text flex flex-col gap-2 w-full max-w-[750px] bg-[#011221]">
+                            <h3 class="text-white uppercase">
+                                Construction Company Laborer
+                            </h3>
+                            <div class="flex justify-between text-white opacity-80 text-[12px]">
+                                <p class=""></p>
+                                <p class="flex flex-row items-center">
+                                    <span>
+                                        <svg class="mr-2 size-[13px] inline">
+                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                        </svg>
+                                    </span>
+                                    2012 - 2015
+                                </p>
+                            </div>
+                            <p class="text-[14px]">
+                                Performed general construction tasks, including material preparation, assisting skilled workers, basic tool handling, loading and unloading materials, maintaining cleanliness and order at the worksite, and supporting different stages of the construction process while following safety and hygiene regulations.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div id="technologies-box" data-type="box" data-box="technologies" class="hidden overflow-auto overflow-x-hidden flex flex-wrap gap-2 p-3 lg:p-[50px] justify-center">
+                        
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_html3"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">html</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_css3"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">css</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_js3"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">javascript</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_sass2"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">sass</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_tailwind2"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">tailwind</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_bulma"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">bulma</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_bootstrap"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">bootstrap</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_php"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">php</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_wordpress"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">wordpress</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_figma"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">figma</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_git"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">git</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_markdown"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">markdown</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_python"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">python</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_c2"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">c</span>
+                        </div>
+                        <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
+                            <svg class="text-menu-text size-[120px]">
+                                <use href="assets/icons/techs/techs.svg#icon_cpp2"></use>
+                            </svg>
+                            <span class="text-white font-fira_regular">c++</span>
+                        </div>
+                        
+                    </div>
+
+                    <div id="education-box" data-type="box" data-box="education" class="hidden overflow-auto overflow-x-hidden flex flex-wrap gap-2 p-3 lg:p-[50px]">
+                        <section class="text-[#8da9c6] w-full">
+                            <div class="container px-4 py-5 mx-auto">
+                                
+                                    <div class="flex flex-col gap-12 relative sm:px-4 before:hidden sm:before:block sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-[#1e2d3d]">
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Escuela Técnica Nº1 de Merlo</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">Técnico electrónico</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2008 - 2011</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Argentina Programa "Se Programar"</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">Lógica de programacion</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Accenture</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">Curso de Habilidades Blandas</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2022</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Agencia de habilidades para el futuro "Codo a Codo”</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">DESARROLLO WEB FULLSTACK PYTHON</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2022</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Centro Universitario de Idiomas</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">Inglés Técnico para desarrolladores de software</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Agencia de habilidades para el futuro "Codo a Codo”</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">DESARROLLO WEB FULLSTACK PHP</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Agencia de habilidades para el futuro "Talento Tech”</h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">PROGRAMACIÓN CON PYTHON</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2024</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Universidad Nacional del Oeste <span class="opacity-80 text-[10px]">(En curso)</span></h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">TECNICATURA UNIVERSITARIA EN TECNOLOGÍAS WEB</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2024</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:gap-8 sm:relative sm:before:absolute sm:before:top-1 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#1e2d3d] sm:before:outline-4 sm:before:outline-[#011627] pb-8 sm:pb-0 border-b-[2px] border-b-[#1e2d3d] sm:border-0">
+                                            <h3 class="text-xl font-fira_medium text-[#799ffb]">Universidad Nacional del Oeste <span class="opacity-80 text-[10px]">(En curso)</span></h3>
+                                            <div class="flex gap-4 sm:gap-0 flex-col-reverse sm:flex-row sm:justify-between sm:items-center font-fira_medium relative sm:before:absolute sm:before:border sm:before:w-full sm:before:border-dashed sm:before:border-[#1e2d3d]">
+                                                <p class="uppercase pr-5 bg-[#011627] relative">Licenciatura en Informática</p>
+                                                <span class="text-xs uppercase sm:pl-5 bg-[#011627] relative">2025</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer class="flex md:justify-between border-top text-menu-text font-fira_retina">
+            <div class="w-full flex justify-between md:justify-start">
+                <span id="social-title" class="h-full flex justify-center items-center border-right px-5"> find me in:
+                </span>
+                <div id="social-icons" class="flex">
+                    <a href="https://codepen.io/erme07" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#codepen"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erik-medina07/" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="flex md:hidden justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="hidden md:flex items-center px-5 border-left">
+                @erme07
+                <svg class="">
+                    <use href="assets/icons/social.svg#github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

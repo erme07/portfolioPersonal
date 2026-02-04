@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Erik Medina | Front-end developer</title>
+</head>
+
+<body>
+    <div id="__nuxt">
+
+        <div id="mobile-menu" class="w-full z-10 lg:hidden">
+            <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
+                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
+                <svg class="w-5 h-5 mx-5 my-auto" id="menu-button-open">
+                    <use href="assets/icons/icons.svg#burguer"></use>
+                </svg>
+                <svg class="w-5 h-5 mx-5 my-auto hidden" id="menu-button-close">
+                    <use href="assets/icons/icons.svg#close-menu"></use>
+                </svg>
+            </div>
+            <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
+                <a href="/index.html" class="" id="nav-link-mobile"> _hello </a>
+                <a href="/about.html" class="" id="nav-link-mobile"> _about-me </a>
+                <a href="/proyects.html" class="" id="nav-link-mobile"> _projects </a>
+                <a aria-current="page" href="/contact.html" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _contact-me </a>
+            </div>
+        </div>
+
+        <header id="navbar" class="w-full hidden lg:flex flex-col">
+            <nav class="w-full flex justify-between border-bot">
+                <div class="flex">
+                    <a href="/index.html" class="" id="nav-logo">erik-medina</a>
+                    <a href="/index.html" class="" id="nav-link"> _hello</a>
+                    <a href="/about.html" class="" id="nav-link"> _about-me </a>
+                    <a href="/proyects.html" class="" id="nav-link">_projects </a>
+                </div>
+                <a href="/contact.html" class="router-link-active router-link-exact-active active" id="nav-link-contact" aria-current="page"> _contact-me </a>
+            </nav>
+        </header>
+
+        <main id="contact-me" class="page">
+            <div id="mobile-page-title">
+                <h2>_contact-me</h2>
+            </div>
+            <div id="page-menu" class="w-full h-full flex flex-col border-right">
+                <div id="contacts" class="flex flex-col submenu">
+                    <div class="title toggle cursor-pointer">
+                        <svg class="arrow" style="transform: rotate(90deg);">
+                            <use href="assets/icons/icons.svg#arrow"></use>
+                        </svg>
+                        <h3> contacts </h3>
+                    </div>
+                    <div id="contacts-links" class="py-[10px]" style="display: block;">
+                        <div class="link">
+                            <svg class="">
+                                <use href="assets/icons/icons.svg#email"></use>
+                            </svg>
+                            <a href="/" class="font-fira_retina text-menu-text hover:text-white">
+                                <svg class="mail">
+                                    <use href="assets/icons/icons.svg#mail"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- <div class="link">
+                            <svg class="">
+                                <use href="assets/icons/icons.svg#phone"></use>
+                            </svg>
+                            <a href="/" class="font-fira_retina text-menu-text hover:text-white">
+                                <svg class="phone">
+                                    <use href="assets/icons/icons.svg#numberphone"></use>
+                                </svg>
+                            </a>
+                        </div> -->
+                        <img src="./assets/images/vcard.svg" alt="" class="w-[220px] m-auto my-3">
+                    </div>
+                </div>
+                <!-- <div id="find-me-in" class="border-top submenu">
+                    <div class="title toggle cursor-pointer">
+                        <svg class="arrow" style="transform: rotate(90deg);">
+                            <use href="assets/icons/icons.svg#arrow"></use>
+                        </svg>
+                        <h3> find-me-also-in </h3>
+                    </div>
+                    <div id="find-links" class="py-[10px]" style="display: block;">
+                        <div class="link">
+                            <svg class="">
+                                <use href="assets/icons/icons.svg#link"></use>
+                            </svg>
+                            <a href="https://github.com/erme07" class="font-fira_retina text-menu-text hover:text-white" target="_blank">Github Acount</a>
+                        </div>
+                        <div class="link">
+                            <svg class="">
+                                <use href="assets/icons/icons.svg#link"></use>
+                            </svg>
+                            <a href="https://codepen.io/erme07" class="font-fira_retina text-menu-text hover:text-white" target="_blank">Codepen profile</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="flex flex-col w-full">
+                <div class="tab-height w-full hidden lg:flex border-right border-bot items-center">
+                    <div class="flex items-center border-right h-full">
+                        <p class="font-fira_regular text-menu-text text-sm px-3">contacts</p>
+                        <svg class="text-menu-text m-3 opacity-70 size-[18px]">
+                            <use href="assets/icons/icons.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row w-full h-[calc(100%_-_35px)]">
+                    <div id="left" class=" w-full flex flex-col border-right items-center">
+                        <form action="https://formspree.io/f/meeeoggz" id="contact-form" class="text-sm" method="POST">
+                            <div class="flex flex-col">
+                                <label for="name-input" class="mb-3">_name:</label>
+                                <input type="text" id="name-input" name="name" placeholder="" class="p-2 mb-5 placeholder-slate-600" required="">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="email-input" class="mb-3">_email:</label>
+                                <input type="email" id="email-input" name="email" placeholder="" class="p-2 mb-5 placeholder-slate-600" required="">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="message-input" class="mb-3">_message:</label>
+                                <textarea id="message-input" name="message" placeholder="" class="placeholder-slate-600" required=""></textarea>
+                            </div>
+                            <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
+                        </form>
+                    </div>
+                    <div id="right" class=" w-full hidden lg:flex">
+                        <div class="form-content">
+                            <div class="code-container flex font-fira_retina text-menu-text">
+                                
+                                <div class="line-numbers lg:flex flex-col w-16 hidden" id="line-numbers">
+                                </div>
+
+                                <div class="font-fira_retina text-white text-container">
+                                    <p><span class="tag"> const </span><span class="tag-name"> button </span> = <span
+                                            class="tag-name"> document.querySelector <span class="text-menu-text"> ( <span
+                                                    class="text-codeline-link"> '#sendBtn' </span> ); </span></span></p><br>
+                                    <p class="text-menu-text"><span class="tag"> const </span><span class="tag-name"> message
+                                        </span> = { <br> &nbsp;&nbsp; <span id="name" class="tag-name"> name </span> : <span
+                                            class="text-codeline-link">"</span><span id="name-value"
+                                            class="text-codeline-link"></span><span class="text-codeline-link">"</span> , <br>
+                                        &nbsp;&nbsp; <span id="email" class="tag-name"> email </span> : <span
+                                            class="text-codeline-link">"</span><span id="email-value"
+                                            class="text-codeline-link"></span><span class="text-codeline-link">"</span> , <br>
+                                        &nbsp;&nbsp; <span id="message" class="tag-name"> message </span> : <span
+                                            class="text-codeline-link">"</span><span id="message-value"
+                                            class="text-codeline-link"></span><span class="text-codeline-link">"</span> , <br>
+                                        &nbsp;&nbsp; date: <span class="text-codeline-link" id="date"></span><br> }
+                                    </p><br>
+                                    <p><span class="tag-name"> button.addEventListener <span class="text-menu-text"> ( <span
+                                                    class="text-codeline-link"> 'click' </span> ), () <span class="tag"> =&gt;
+                                                </span> { <br></span> &nbsp;&nbsp;form.send <span
+                                                class="text-menu-text">(</span> message <span class="text-menu-text">); <br>
+                                                })</span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="scroll-bar" class="h-full border-left flex justify-center py-1">
+                            <div id="scroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="flex md:justify-between border-top text-menu-text font-fira_retina">
+            <div class="w-full flex justify-between md:justify-start">
+                <span id="social-title" class="h-full flex justify-center items-center border-right px-5"> find me in:
+                </span>
+                <div id="social-icons" class="flex">
+                    <a href="https://codepen.io/erme07" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#codepen"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erik-medina07/" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="flex md:hidden justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="hidden md:flex items-center px-5 border-left">
+                @erme07
+                <svg class="">
+                    <use href="assets/icons/social.svg#github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>

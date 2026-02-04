@@ -1,0 +1,82 @@
+/* ::::::::::::::::::::  header  :::::::::::::::::.::*/
+
+
+.border-bot {
+    border-bottom: 1px solid #1e2d3d;
+}
+
+#nav-logo {
+    align-items: center;
+    border-right: 1px solid #1e2d3d;
+    color: rgb(133 165 196 / 1);
+    display: flex;
+    font-family: Fira Code Retina;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#nav-logo.router-link-active {
+    border-bottom: none;
+    border-right: 1px solid #1e2d3d;
+    color: rgb(133 165 196 / 1);
+}
+
+#nav-link {
+    border-right: 1px solid #1e2d3d;
+}
+
+#nav-link, #nav-link-contact {
+    align-items: center;
+    color: rgb(133 165 196 / 1);
+    display: flex;
+    font-family: Fira Code Retina;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#nav-link-contact.router-link-active, #nav-link.router-link-active {
+    border-bottom: 2px solid #fea55f;
+    color: #fff;
+}
+
+#nav-link-contact {
+    border-left: 1px solid #1e2d3d;
+}
+
+#nav-link-contact:hover, #nav-link:hover {
+    background-color: #1e2d3d74;
+    color: #fff;
+}
+#nav-logo:hover {
+    background-color: #1e2d3d74;
+    color: #fff;
+}
+
+#mobile-header, #nav-link-mobile {
+    border-bottom: 1px solid #1e2d3d;
+}
+#mobile-header{
+    height: 60px;
+}
+.bg-bluefy-dark, .bg-mobile-menu-blue {
+    background-color: rgb(1 22 39 / 1);
+}
+
+
+#nav-link-mobile {
+    align-items: center;
+    color: rgb(133 165 196 / 1);
+    display: flex;
+    font-family: 'Fira Code Retina';
+    padding: 1rem 1.5rem;
+}
+#nav-link-mobile.active{
+    color: #fff;
+}
+
+#navbar>nav {
+    font-size: 13px;
+    height: 45px;
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/projects.js" defer></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/proyects.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Erik Medina | Front-end developer</title>
+</head>
+
+<body>
+    <div id="__nuxt">
+
+        <div id="mobile-menu" class="w-full z-10 lg:hidden">
+            <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
+                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
+                <svg class="w-5 h-5 mx-5 my-auto" id="menu-button-open">
+                    <use href="assets/icons/icons.svg#burguer"></use>
+                </svg>
+                <svg class="w-5 h-5 mx-5 my-auto hidden" id="menu-button-close">
+                    <use href="assets/icons/icons.svg#close-menu"></use>
+                </svg>
+            </div>
+            <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
+                <a href="/index.html" class="" id="nav-link-mobile"> _hello </a>
+                <a href="/about.html" class="" id="nav-link-mobile"> _about-me </a>
+                <a aria-current="page" href="/proyects.html" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _projects </a>
+                <a href="/contact.html" class="" id="nav-link-mobile"> _contact-me </a>
+            </div>
+        </div>
+
+        <header id="navbar" class="w-full hidden lg:flex flex-col">
+            <nav class="w-full flex justify-between border-bot">
+                <div class="flex">
+                    <a href="/index.html" class="" id="nav-logo">erik-medina</a>
+                    <a href="/index.html" class="" id="nav-link"> _hello</a>
+                    <a href="/about.html" class="" id="nav-link"> _about-me </a>
+                    <a href="/proyects.html" class="router-link-active router-link-exact-active active" id="nav-link" aria-current="page">_projects </a>
+                </div>
+                <a href="/contact.html" class="" id="nav-link-contact"> _contact-me </a>
+            </nav>
+        </header>
+
+
+        <main class="flex flex-col flex-auto lg:flex-row overflow-hidden aos-init aos-animate" data-aos="fade-in">
+            <div id="mobile-page-title" class="lg:hidden">
+                <h2>_projects</h2>
+            </div>
+            <div id="section-content-title" class="flex lg:hidden mobile">
+                <svg id="section-arrow-menu-mobile" class="section-arrow rotate-90 w-[12px] h-[10px] mr-2">
+                    <use href="assets/icons/icons.svg#arrow"></use>
+                </svg>
+                <span class="font-fira_regular text-white text-sm">projects</span>
+            </div>
+            <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
+                <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
+                    <svg id="section-arrow-menu" class="section-arrow mx-3 w-[9px] h-[7px]">
+                        <use href="assets/icons/icons.svg#arrow"></use>
+                    </svg>
+                    <p class="font-fira_regular text-white text-sm">projects</p>
+                </div>
+                <nav id="filters" class="w-full flex-col p-[10px_25px]">
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="HTML">
+                        <svg id="icon-tech-HTML" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_html"></use>
+                        </svg>
+                        <label for="HTML" id="title-tech-HTML">HTML</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="CSS">
+                        <svg id="icon-tech-CSS" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_css"></use>
+                        </svg>
+                        <label for="CSS" id="title-tech-CSS">CSS</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="Tailwind">
+                        <svg id="icon-tech-tailwind" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_tailwind"></use>
+                        </svg>
+                        <label for="Tailwind" id="title-tech-tailwind">Tailwind</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="Sass">
+                        <svg id="icon-tech-sass" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_sass"></use>
+                        </svg>
+                        <label for="Sass" id="title-tech-sass">Sass</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="JS">
+                        <svg id="icon-tech-js" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_js"></use>
+                        </svg>
+                        <label for="JS" id="title-tech-Js">Javascript</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="C">
+                        <svg id="icon-tech-c" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_c"></use>
+                        </svg>
+                        <label for="C" id="title-tech-c">c&nbsp&nbsp&nbsp</label>
+                    </div>
+                    <div class="flex items-center py-2">
+                        <input type="checkbox" id="C++">
+                        <svg id="icon-tech-cpp" class="tech-icon size-5 mx-4 text-[#607B96]">
+                            <use href="assets/icons/techs/techs.svg#icon_cpp"></use>
+                        </svg>
+                        <label for="C++" id="title-tech-cpp">c++</label>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex flex-col w-full overflow-hidden">
+
+                <div class="tab-height w-full hidden lg:flex border-bot items-center">
+                    <div class="flex items-center border-right h-full">
+                        <p class="font-fira_regular text-menu-text text-sm px-3" id="techs-selected">all; </p>
+                        <svg class="text-menu-text m-3 opacity-70 size-[18px]">
+                            <use href="assets/icons/icons.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="tab" class="flex lg:hidden items-center">
+                    <span class="text-white"> // </span>
+                    <p class="font-fira_regular text-white text-sm px-3">projects</p>
+                    <span class="text-menu-text"> / </span>
+                    <p class="font-fira_regular text-menu-text text-sm px-3">all; </p>
+                </div>
+
+                <div id="projects-case" class="grid grid-cols-1 gap-y-5 lg:grid-cols-2 max-w-full h-full overflow-auto lg:self-center">
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _waw-widget</h4>
+                        </span>
+                        <div class="project-card flex flex-col">
+                            <div class="relative overflow-hidden max-h-[230px]">
+                                <div class="absolute flex right-3 top-3">
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/waw_preview.webp" alt="" class="">
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top">
+                                <p class="text-menu-text font-fira_retina text-sm mb-5">
+                                    Web accessibility widget for the official website of the National University of the West
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://erme07.github.io/waw_demo/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/waw" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="tailwind-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _fashion-landing-page</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3">
+                                    <svg class="size-[24px] p-1 mx-1 bg-[#00BCFF] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_tailwind"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/fashion_preview.webp" alt="" class="">
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Landing page made with Tailwind CSS, inspired by a design taken from Figma
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://fashion-shopping-landing.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/fashionShoppingLanding" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="tailwind-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text"> // _portfolio-design</h4>
+                        </span>
+                        <div class="project-card flex flex-col">
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-1 mx-1 bg-[#00BCFF] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_tailwind"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/thomas_preview.webp" alt="" class="">
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Landing page made with Tailwind CSS, inspired by a design taken from Figma
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://james-thomas-portfolio.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/developerPortfolioLanding" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _zona-geek</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/doblegeek_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Zona Geek is a magazine type website, with geek style
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://erme07.github.io/zona-geek/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/zona-geek" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _shoes-landing-page</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-1 mx-1 bg-[#00BCFF] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_tailwind"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/shoes_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Landing page made with Tailwind CSS, inspired by a design taken from Figma
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://shoes-landing.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/shoesLandingPage" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="sass-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _coffee-landing-page</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-1 mx-1 bg-[#CD6799] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_sass2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/coffecentral_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Landing page made with Tailwind CSS, inspired by a design taken from Figma
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://coffee-landpage.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/coffee-landpage" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="tailwind-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _coffee-landing-page</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-1 mx-1 bg-[#00BCFF] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_tailwind"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/coffeeshop_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Landing page made with Tailwind CSS, inspired by a design taken from Figma
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://coffee-landing-shop.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/coffeeShopLandingPage" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _vCard-generator</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/vcard_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    This project allows you to create a vCard to share using a QR code
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://vcardgenerator.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/vcardGenerator" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _memory-game</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/memorama_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    This is a simple memory game made with javascript
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://erme07.github.io/memorama/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/memorama" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _scientific-calculator</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/calculator_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    This project attempts to emulate the appearance and functionalities of a basic scientific calculator
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://calculator-3ke.pages.dev/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/Calculator" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _pixel-art-canvas</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/pixelart_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    A small canvas that allows you to create simple figures or complex drawings in pixel art style
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://erme07.github.io/pixelArtCanvas/" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/pixelArtCanvas" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="c++">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _brick-game-tetris</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#394AAB] rounded-xs hover:opacity-75" title="C++">
+                                        <use href="assets/icons/techs/techs.svg#icon_cpp2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/tetris_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Game made with Miniwin, a small graphics library for Windows.
+                                </p>
+                                <a href="https://github.com/erme07/tetris_cpp" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="js-css-html">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _custom-amongus</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#F0DB4F] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_js2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#E14E1D] rounded-xs hover:opacity-75" title="HTML">
+                                        <use href="assets/icons/techs/techs.svg#icon_html2"></use>
+                                    </svg>
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#0277BD] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_css2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/customamongus_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    With this project you can customize your own Among Us character
+                                </p>
+                                <div class="flex gap-2">
+                                    <a href="https://erme07.github.io/proyectos-SVG/customAmongus/customAmongus.html" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                                    <a href="https://github.com/erme07/proyectos-SVG/tree/master/customAmongus" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="c">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _snake-game</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#394AAB] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_c2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/snakec_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Classic Snake game, played on a console and made in c
+                                </p>
+                                <a href="https://github.com/erme07/snake_c" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project lg:mx-5" data-tech="c">
+                        <span class="flex text-sm my-3">
+                            <h3 class="text-[#799ffb] font-fira_bold mr-3" >Project</h3>
+                            <h4 class="font-fira_retina text-menu-text" > // _crud-c</h4>
+                        </span>
+                        <div class="project-card flex flex-col" >
+                            <div class="relative overflow-hidden max-h-[230px]" >
+                                <div class="absolute flex right-3 top-3" >
+                                    <svg class="size-[24px] p-[2px] mx-1 bg-[#394AAB] rounded-xs hover:opacity-75" title="CSS">
+                                        <use href="assets/icons/techs/techs.svg#icon_c2"></use>
+                                    </svg>
+                                </div>
+                                <img src="assets/images/projects/gestor_preview.webp" alt="" class="" >
+                            </div>
+                            <div class="pb-8 pt-6 px-6 border-top" >
+                                <p class="text-menu-text font-fira_retina text-sm mb-5" >
+                                    Console program written in C, manages a database that stores people's contacts
+                                </p>
+                                <a href="https://github.com/erme07/gestor_contactos" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg bg-[#1c2b3a] hover:bg-[#263b50]"> view-project </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="flex md:justify-between border-top text-menu-text font-fira_retina">
+            <div class="w-full flex justify-between md:justify-start">
+                <span id="social-title" class="h-full flex justify-center items-center border-right px-5"> find me in:
+                </span>
+                <div id="social-icons" class="flex">
+                    <a href="https://codepen.io/erme07" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#codepen"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erik-medina07/" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="flex md:hidden justify-center items-center">
+                        <svg class="">
+                            <use href="assets/icons/social.svg#github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="hidden md:flex items-center px-5 border-left">
+                @erme07
+                <svg class="">
+                    <use href="assets/icons/social.svg#github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>
