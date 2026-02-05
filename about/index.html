@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/index.js" defer></script>
-    <script src="./js/about.js" defer></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../js/about.js" defer></script>
     <title>Erik Medina | Front-end developer</title>
 </head>
 
@@ -20,31 +20,31 @@
 
         <div id="mobile-menu" class="w-full z-10 lg:hidden">
             <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
-                <a aria-current="page" href="/index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
+                <a aria-current="page" href="../index.html" class="router-link-active router-link-exact-active text-menu-text font-fira_retina flex h-full items-center mx-5">erik-medina</a>
                 <svg class="w-5 h-5 mx-5 my-auto" id="menu-button-open">
-                    <use href="assets/icons/icons.svg#burguer"></use>
+                    <use href="../assets/icons/icons.svg#burguer"></use>
                 </svg>
                 <svg class="w-5 h-5 mx-5 my-auto hidden" id="menu-button-close">
-                    <use href="assets/icons/icons.svg#close-menu"></use>
+                    <use href="../assets/icons/icons.svg#close-menu"></use>
                 </svg>
             </div>
             <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
-                <a href="/index.html" class="" id="nav-link-mobile"> _hello </a>
-                <a aria-current="page" href="/about.html" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _about-me </a>
-                <a href="/proyects.html" class="" id="nav-link-mobile"> _projects </a>
-                <a href="/contact.html" class="" id="nav-link-mobile"> _contact-me </a>
+                <a href="../" class="" id="nav-link-mobile"> _hello </a>
+                <a aria-current="page" href="./about/" class="router-link-active router-link-exact-active active" id="nav-link-mobile"> _about-me </a>
+                <a href="../projects/" class="" id="nav-link-mobile"> _projects </a>
+                <a href="../contact/" class="" id="nav-link-mobile"> _contact-me </a>
             </div>
         </div>
 
         <header id="navbar" class="w-full hidden lg:flex flex-col">
             <nav class="w-full flex justify-between border-bot">
                 <div class="flex">
-                    <a href="/index.html" class="" id="nav-logo">erik-medina</a>
-                    <a href="/index.html" class="" id="nav-link"> _hello</a>
-                    <a aria-current="page" href="/about.html" class="router-link-active router-link-exact-active active" id="nav-link"> _about-me </a>
-                    <a href="/proyects.html" class="" id="nav-link">_projects </a>
+                    <a href="../" class="" id="nav-logo">erik-medina</a>
+                    <a href="../" class="" id="nav-link"> _hello</a>
+                    <a aria-current="page" href="./about/" class="router-link-active router-link-exact-active active" id="nav-link"> _about-me </a>
+                    <a href="../projects/" class="" id="nav-link">_projects </a>
                 </div>
-                <a href="/contact.html" class="" id="nav-link-contact"> _contact-me </a>
+                <a href="../contact/" class="" id="nav-link-contact"> _contact-me </a>
             </nav>
         </header>
 
@@ -60,10 +60,10 @@
                     <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
                         <div data-type="tab" data-tab="presentation" class="flex items-center col-span-2 hover:text-white cursor-pointer">
                             <svg class="mx-3 w-2 max-w-fit transition-all open" id="diple">
-                                <use href="assets/icons/icons.svg#diple"></use>
+                                <use href="../assets/icons/icons.svg#diple"></use>
                             </svg>
                             <svg class="mr-3 w-[20px] h-[20px] text-[#e9e287]">
-                                <use href="assets/icons/icons.svg#folder"></use>
+                                <use href="../assets/icons/icons.svg#folder"></use>
                             </svg>
                             <p id="presentation-label" data-type="tab-content" class="active" data-content="presentation">presentation</p>
                         </div>
@@ -71,10 +71,10 @@
                     <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
                         <div data-type="tab" data-tab="experience" class="flex items-center col-span-2 hover:text-white cursor-pointer">
                             <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
-                                <use href="assets/icons/icons.svg#diple"></use>
+                                <use href="../assets/icons/icons.svg#diple"></use>
                             </svg>
                             <svg class="mr-3 w-[20px] h-[20px] text-[#E99287]">
-                                <use href="assets/icons/icons.svg#folder"></use>
+                                <use href="../assets/icons/icons.svg#folder"></use>
                             </svg>
                             <p id="experience-label" class="" data-content="experience">experience</p>
                         </div>
@@ -82,10 +82,10 @@
                     <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
                         <div data-type="tab" data-tab="technologies" class="flex col-span-2 hover:text-white cursor-pointer items-center">
                             <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
-                                <use href="assets/icons/icons.svg#diple"></use>
+                                <use href="../assets/icons/icons.svg#diple"></use>
                             </svg>
                             <svg class="mr-3 w-[20px] h-[20px] text-[#43D9AD]">
-                                <use href="assets/icons/icons.svg#folder"></use>
+                                <use href="../assets/icons/icons.svg#folder"></use>
                             </svg>
                             <p id="technologies-label" class="" data-content="experience">technologies</p>
                         </div>
@@ -93,10 +93,10 @@
                     <div class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text">
                         <div data-type="tab" data-tab="education" class="flex col-span-2 hover:text-white cursor-pointer items-center">
                             <svg class="mx-3 w-2 max-w-fit transition-all" id="diple">
-                                <use href="assets/icons/icons.svg#diple"></use>
+                                <use href="../assets/icons/icons.svg#diple"></use>
                             </svg>
                             <svg class="mr-3 w-[20px] h-[20px] text-[#3A49A4]">
-                                <use href="assets/icons/icons.svg#folder"></use>
+                                <use href="../assets/icons/icons.svg#folder"></use>
                             </svg>
                             <p id="education-label" class="" data-content="education">education</p>
                         </div>
@@ -111,7 +111,7 @@
                         <div class="flex items-center border-right h-full">
                             <p class="font-fira_regular text-menu-text text-sm px-3" id="tab-title">presentation</p>
                             <svg class="text-menu-text m-3 opacity-70 size-[18px]">
-                                <use href="assets/icons/icons.svg#close"></use>
+                                <use href="../assets/icons/icons.svg#close"></use>
                             </svg>
                         </div>
                     </div>
@@ -123,17 +123,17 @@
                     </div>
 
                     <div id="commented-text"  data-type="box" data-box="presentation" class="flex w-full lg:border-right overflow-hidden">
-                            <div class="code-container flex flex-col lg:flex-row items-center font-fira_retina text-menu-text rounded-md gap-8 lg:gap-12 border border-[#1e2d3d] bg-[#011221] m-2 p-6 py-12 lg:m-12 lg:p-8">
-                                <img src="./assets/images/perfil.jpg" alt="" class="w-[200px] h-auto rounded-md opacity-90">
-                                <div class="flex flex-col items-center justify-center font-fira_regular text-[15px]">
-                                    <p>
-                                        As a frontend developer, I focus on writing clean code and building clear, user-friendly experiences that are technically solid.
-                                    </p>
-                                    <p>
-                                        I’ve spent many years learning and practicing on my own, working on personal projects as well as some client work, exploring different technologies across the web ecosystem and always aiming to improve the quality and detail of every product.
-                                    </p>
-                                </div>
+                        <div class="code-container flex flex-col lg:flex-row items-center font-fira_retina text-menu-text rounded-md gap-8 lg:gap-12 border border-[#1e2d3d] bg-[#011221] m-2 p-6 py-12 lg:m-12 lg:p-8">
+                            <img src="../assets/images/perfil.jpg" alt="" class="w-[200px] h-auto rounded-md opacity-95">
+                            <div class="flex flex-col items-center justify-center font-fira_regular text-[15px]">
+                                <p>
+                                    As a frontend developer, I focus on writing clean code and building clear, user-friendly experiences that are technically solid.
+                                </p>
+                                <p>
+                                    I’ve spent many years learning and practicing on my own, working on personal projects as well as some client work, exploring different technologies across the web ecosystem and always aiming to improve the quality and detail of every product.
+                                </p>
                             </div>
+                        </div>
                     </div>
 
                     <div id="experience-box" data-type="box" data-box="experience" class="hidden overflow-auto overflow-x-hidden flex flex-col gap-8 p-3 lg:p-[50px] ">
@@ -144,7 +144,7 @@
                                 <p class="flex flex-row items-center">
                                     <span>
                                         <svg class="mr-2 size-[13px] inline">
-                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                            <use href="../assets/icons/icons.svg#calendar"></use>
                                         </svg>
                                     </span>
                                     2025 - 2026
@@ -161,7 +161,7 @@
                                 <p class="flex flex-row items-center">
                                     <span>
                                         <svg class="mr-2 size-[13px] inline">
-                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                            <use href="../assets/icons/icons.svg#calendar"></use>
                                         </svg>
                                     </span>
                                     2022 - 2026
@@ -178,7 +178,7 @@
                                 <p class="flex flex-row items-center">
                                     <span>
                                         <svg class="mr-2 size-[13px] inline">
-                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                            <use href="../assets/icons/icons.svg#calendar"></use>
                                         </svg>
                                     </span>
                                     2025
@@ -196,7 +196,7 @@
                                 <p class="flex flex-row items-center">
                                     <span>
                                         <svg class="mr-2 size-[13px] inline">
-                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                            <use href="../assets/icons/icons.svg#calendar"></use>
                                         </svg>
                                     </span>
                                     2012 - 2026
@@ -215,7 +215,7 @@
                                 <p class="flex flex-row items-center">
                                     <span>
                                         <svg class="mr-2 size-[13px] inline">
-                                            <use href="assets/icons/icons.svg#calendar"></use>
+                                            <use href="../assets/icons/icons.svg#calendar"></use>
                                         </svg>
                                     </span>
                                     2012 - 2015
@@ -232,91 +232,91 @@
                         
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_html3"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_html3"></use>
                             </svg>
                             <span class="text-white font-fira_regular">html</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_css3"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_css3"></use>
                             </svg>
                             <span class="text-white font-fira_regular">css</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_js3"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_js3"></use>
                             </svg>
                             <span class="text-white font-fira_regular">javascript</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_sass2"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_sass2"></use>
                             </svg>
                             <span class="text-white font-fira_regular">sass</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_tailwind2"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_tailwind2"></use>
                             </svg>
                             <span class="text-white font-fira_regular">tailwind</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_bulma"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_bulma"></use>
                             </svg>
                             <span class="text-white font-fira_regular">bulma</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_bootstrap"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_bootstrap"></use>
                             </svg>
                             <span class="text-white font-fira_regular">bootstrap</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_php"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_php"></use>
                             </svg>
                             <span class="text-white font-fira_regular">php</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_wordpress"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_wordpress"></use>
                             </svg>
                             <span class="text-white font-fira_regular">wordpress</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_figma"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_figma"></use>
                             </svg>
                             <span class="text-white font-fira_regular">figma</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_git"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_git"></use>
                             </svg>
                             <span class="text-white font-fira_regular">git</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_markdown"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_markdown"></use>
                             </svg>
                             <span class="text-white font-fira_regular">markdown</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_python"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_python"></use>
                             </svg>
                             <span class="text-white font-fira_regular">python</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_c2"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_c2"></use>
                             </svg>
                             <span class="text-white font-fira_regular">c</span>
                         </div>
                         <div class="bg-[#011221] p-4 border border-[#1e2d3d] rounded-md flex flex-col gap-2 items-center">
                             <svg class="text-menu-text size-[120px]">
-                                <use href="assets/icons/techs/techs.svg#icon_cpp2"></use>
+                                <use href="../assets/icons/techs/techs.svg#icon_cpp2"></use>
                             </svg>
                             <span class="text-white font-fira_regular">c++</span>
                         </div>
@@ -410,17 +410,17 @@
                 <div id="social-icons" class="flex">
                     <a href="https://codepen.io/erme07" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
                         <svg class="">
-                            <use href="assets/icons/social.svg#codepen"></use>
+                            <use href="../assets/icons/social.svg#codepen"></use>
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/erik-medina07/" rel="noopener noreferrer" target="_blank" class="flex justify-center items-center">
                         <svg class="">
-                            <use href="assets/icons/social.svg#linkedin"></use>
+                            <use href="../assets/icons/social.svg#linkedin"></use>
                         </svg>
                     </a>
                     <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="flex md:hidden justify-center items-center">
                         <svg class="">
-                            <use href="assets/icons/social.svg#github"></use>
+                            <use href="../assets/icons/social.svg#github"></use>
                         </svg>
                     </a>
                 </div>
@@ -428,7 +428,7 @@
             <a href="https://github.com/erme07" rel="noopener noreferrer" target="_blank" class="hidden md:flex items-center px-5 border-left">
                 @erme07
                 <svg class="">
-                    <use href="assets/icons/social.svg#github"></use>
+                    <use href="../assets/icons/social.svg#github"></use>
                 </svg>
             </a>
         </footer>
